@@ -1,0 +1,108 @@
+/* จัดการสไตล์สำหรับฟอร์ม */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* จัดการสไตล์สำหรับฟิลด์เซ็ตและ legend */
+  fieldset {
+    border: none;
+  }
+  
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* ข้อความข้อผิดพลาด */
+  #errormsg, #loginError {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* ช่องกรอกข้อมูล (input fields) */
+  input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* สำหรับ radio button */
+  input[type="radio"] {
+    margin-left: 10px;
+  }
+  
+  /* ปุ่ม submit และ reset */
+  input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+  }
+  
+  input[type="reset"] {
+    background-color: #f44336;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: #e53935;
+  }
+  
+  /* จัดการข้อความข้อบังคับ */
+  span {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* สำหรับปุ่มต่างๆ ตอน hover */
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    opacity: 0.9;
+  }
+  
+  /* จัดการช่องว่างระหว่างฟิลด์ */
+  form fieldset > * {
+    margin-bottom: 10px;
+  }
+  
+  /* กล่องข้อความแจ้งเตือน */
+  .alert {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* การจัดการ Responsive Layout */
+  @media screen and (max-width: 600px) {
+    form {
+      padding: 10px;
+    }
+    
+    input[type="submit"], input[type="reset"] {
+      width: 100%;
+    }
+  }
+  
